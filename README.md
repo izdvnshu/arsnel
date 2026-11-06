@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/banner.svg" alt="ARSNEL" width="100%">
+  <img src="docs/banner.svg" alt="ARSNEL" width="100%">
 </p>
 
 <h1 align="center"><code>ARSNEL</code></h1>
@@ -48,23 +48,23 @@ Pin a release for a repeatable install, using the same tag in the URL and in `AR
 
 ```powershell
 $env:ARSNEL_REF = 'v0.1.0'
-& ([scriptblock]::Create((irm https://raw.githubusercontent.com/YOUR_USERNAME/arsnel/v0.1.0/scripts/install.ps1)))
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/unfotable/arsnel/v0.1.0/scripts/install.ps1)))
 ```
 
 ```bash
-ARSNEL_REF=v0.1.0 bash -c "$(curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/arsnel/v0.1.0/scripts/install.sh)"
+ARSNEL_REF=v0.1.0 bash -c "$(curl -fsSL https://raw.githubusercontent.com/unfotable/arsnel/v0.1.0/scripts/install.sh)"
 ```
 
 Prefer to read it first? Download, review, then run:
 
 ```powershell
-irm https://raw.githubusercontent.com/YOUR_USERNAME/arsnel/main/scripts/install.ps1 -OutFile install.ps1
+irm https://raw.githubusercontent.com/unfotable/arsnel/main/scripts/install.ps1 -OutFile install.ps1
 notepad install.ps1
 .\install.ps1
 ```
 
 ```bash
-curl -fsSLO https://raw.githubusercontent.com/YOUR_USERNAME/arsnel/main/scripts/install.sh
+curl -fsSLO https://raw.githubusercontent.com/unfotable/arsnel/main/scripts/install.sh
 less install.sh
 bash install.sh
 ```
@@ -79,7 +79,7 @@ To uninstall, delete the `~/.arsnel` folder, and on Linux/macOS also `~/.local/b
 
 ```bash
 set -e
-git clone https://github.com/YOUR_USERNAME/arsnel.git
+git clone https://github.com/unfotable/arsnel.git
 cd arsnel
 python3 -m venv .venv
 source .venv/bin/activate
@@ -93,7 +93,7 @@ arsnel --help
 **Windows (PowerShell)**
 
 ```powershell
-git clone https://github.com/YOUR_USERNAME/arsnel.git
+git clone https://github.com/unfotable/arsnel.git
 cd arsnel
 py -3.11 -m venv .venv
 .venv\Scripts\Activate.ps1
