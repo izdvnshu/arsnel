@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="1200" height="240" role="img" aria-label="ARSNEL">
+  <title>ARSNEL</title>
+  <defs>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1.6" fill="#0A0A0A" fill-opacity="0.28"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="240" fill="#FFFFFF"/>
+  <rect width="1200" height="240" fill="url(#dots)"/>
+  <rect x="300" y="60" width="600" height="120" fill="#FFFFFF"/>
+  <text x="600" y="128" text-anchor="middle" font-family="'JetBrains Mono','Space Mono',ui-monospace,Menlo,Consolas,monospace"
+        font-size="64" font-weight="700" letter-spacing="14" fill="#4169E1">ARSNEL</text>
+  <text x="600" y="160" text-anchor="middle" font-family="'JetBrains Mono','Space Mono',ui-monospace,Menlo,Consolas,monospace"
+        font-size="16" letter-spacing="2" fill="#0A0A0A">organize · tailor · summarize — all local</text>
+</svg>
