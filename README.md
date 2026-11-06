@@ -27,7 +27,8 @@ The two language features use a model running on your own computer through [olla
 
 You need Python 3.11+, git and ollama. All are free. Install [ollama](https://ollama.com) first, then paste the block for your system.
 
-### One command
+### One command(use izdvnshu as your-username)
+
 
 **Windows (PowerShell script block)**
 
