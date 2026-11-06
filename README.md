@@ -9,7 +9,7 @@
 <p align="center">
   <img alt="python 3.11+" src="https://img.shields.io/badge/python-3.11%2B-0A0A0A?style=flat-square&labelColor=0A0A0A&color=4169E1">
   <img alt="license MIT" src="https://img.shields.io/badge/license-MIT-0A0A0A?style=flat-square&labelColor=0A0A0A&color=4169E1">
-  <img alt="tests" src="https://img.shields.io/github/actions/workflow/status/YOUR_USERNAME/arsnel/tests.yml?branch=main&label=tests&style=flat-square&labelColor=0A0A0A&color=4169E1">
+  <img alt="tests" src="https://img.shields.io/github/actions/workflow/status/unfotable/arsnel/tests.yml?branch=main&label=tests&style=flat-square&labelColor=0A0A0A&color=4169E1">
 </p>
 
 <p align="center">· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · </p>
