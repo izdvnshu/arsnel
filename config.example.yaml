@@ -1,0 +1,26 @@
+# ARSNEL settings. Copy to config.yaml (or run `arsnel init`).
+# Lookup order: --config, $ARSNEL_CONFIG, ./config.yaml, ~/.arsnel/config.yaml
+# Settings only: secrets (API keys, tokens) go in .env, never here. See .env.example.
+# Every key is optional; anything omitted uses the default shown here.
+
+organizer:
+  watch_dir: ~/Downloads        # folder to sort and watch
+  settle_seconds: 2.0           # how long a file must stay unchanged before it is moved
+  ignore_extensions:            # in-progress downloads are never touched
+    - .crdownload
+    - .part
+    - .partial
+    - .tmp
+    - .download
+  extra_extensions: {}          # e.g. { Ebooks: [.mobi, .azw] } adds or remaps extensions
+  filename_rules: []            # e.g. [{ pattern: "^meeting", folder: "Work/Meetings" }]
+
+llm:
+  model: llama3.2               # any model you have pulled with `ollama pull`
+  host: http://localhost:11434
+  temperature: 0.2
+  num_ctx: 8192
+
+output:
+  format: terminal              # terminal: print only | markdown: also save a .md file
+  directory: ~/arsnel-output

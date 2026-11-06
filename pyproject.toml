@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arsnel"
+version = "0.1.0"
+description = "Local-first productivity automation: file organizer, resume tailor and meeting notes in one CLI."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "ARSNEL contributors" }]
+keywords = ["automation", "cli", "ollama", "local-llm", "productivity", "organizer"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+]
+dependencies = [
+    "typer>=0.12",
+    "rich>=13.7",
+    "watchdog>=4.0",
+    "ollama>=0.3",
+    "pypdf>=4.0",
+    "python-docx>=1.1",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-cov>=5.0"]
+
+[project.scripts]
+arsnel = "arsnel.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["arsnel*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"
